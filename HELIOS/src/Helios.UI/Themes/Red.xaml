@@ -1,0 +1,27 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="HeliosAccentColor">#E5484D</Color>
+    <Color x:Key="HeliosCanvasBackgroundColor">#1A1214</Color>
+    <Color x:Key="HeliosPanelBackgroundColor">#231A1C</Color>
+    <Color x:Key="HeliosBorderColor">#3A2529</Color>
+    <Color x:Key="HeliosTextPrimaryColor">#F7EDEE</Color>
+    <Color x:Key="HeliosTextSecondaryColor">#B79A9C</Color>
+    <Color x:Key="HeliosHealthyColor">#3FCB7C</Color>
+    <Color x:Key="HeliosWarningColor">#F0C000</Color>
+    <Color x:Key="HeliosDegradedColor">#FF9A44</Color>
+    <Color x:Key="HeliosCriticalColor">#FF5C4D</Color>
+    <Color x:Key="HeliosUnknownColor">#8A6D6F</Color>
+
+    <SolidColorBrush x:Key="HeliosAccentBrush" Color="{StaticResource HeliosAccentColor}" />
+    <SolidColorBrush x:Key="HeliosCanvasBackgroundBrush" Color="{StaticResource HeliosCanvasBackgroundColor}" />
+    <SolidColorBrush x:Key="HeliosPanelBackgroundBrush" Color="{StaticResource HeliosPanelBackgroundColor}" />
+    <SolidColorBrush x:Key="HeliosBorderBrush" Color="{StaticResource HeliosBorderColor}" />
+    <SolidColorBrush x:Key="HeliosTextPrimaryBrush" Color="{StaticResource HeliosTextPrimaryColor}" />
+    <SolidColorBrush x:Key="HeliosTextSecondaryBrush" Color="{StaticResource HeliosTextSecondaryColor}" />
+    <SolidColorBrush x:Key="HeliosHealthyBrush" Color="{StaticResource HeliosHealthyColor}" />
+    <SolidColorBrush x:Key="HeliosWarningBrush" Color="{StaticResource HeliosWarningColor}" />
+    <SolidColorBrush x:Key="HeliosDegradedBrush" Color="{StaticResource HeliosDegradedColor}" />
+    <SolidColorBrush x:Key="HeliosCriticalBrush" Color="{StaticResource HeliosCriticalColor}" />
+    <SolidColorBrush x:Key="HeliosUnknownBrush" Color="{StaticResource HeliosUnknownColor}" />
+</ResourceDictionary>

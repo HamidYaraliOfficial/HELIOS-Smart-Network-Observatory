@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>Helios.UI</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x86;x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <PublishProfile>win-$(Platform).pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <WindowsPackageType>None</WindowsPackageType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Assets/helios.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250310001" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="CommunityToolkit.WinUI.Controls.Segmented" Version="8.1.240916" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Helios.Core\Helios.Core.csproj" />
+    <ProjectReference Include="..\Helios.Networking\Helios.Networking.csproj" />
+    <ProjectReference Include="..\Helios.Discovery\Helios.Discovery.csproj" />
+    <ProjectReference Include="..\Helios.Topology\Helios.Topology.csproj" />
+    <ProjectReference Include="..\Helios.Graph\Helios.Graph.csproj" />
+    <ProjectReference Include="..\Helios.Traffic\Helios.Traffic.csproj" />
+    <ProjectReference Include="..\Helios.Telemetry\Helios.Telemetry.csproj" />
+    <ProjectReference Include="..\Helios.Events\Helios.Events.csproj" />
+    <ProjectReference Include="..\Helios.Alerts\Helios.Alerts.csproj" />
+    <ProjectReference Include="..\Helios.Rules\Helios.Rules.csproj" />
+    <ProjectReference Include="..\Helios.Analytics\Helios.Analytics.csproj" />
+    <ProjectReference Include="..\Helios.Storage\Helios.Storage.csproj" />
+    <ProjectReference Include="..\Helios.Search\Helios.Search.csproj" />
+    <ProjectReference Include="..\Helios.Reports\Helios.Reports.csproj" />
+    <ProjectReference Include="..\Helios.AI\Helios.AI.csproj" />
+    <ProjectReference Include="..\Helios.Security\Helios.Security.csproj" />
+    <ProjectReference Include="..\Helios.Simulation\Helios.Simulation.csproj" />
+    <ProjectReference Include="..\Helios.Integrations\Helios.Integrations.csproj" />
+    <ProjectReference Include="..\Helios.Infrastructure\Helios.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+</Project>

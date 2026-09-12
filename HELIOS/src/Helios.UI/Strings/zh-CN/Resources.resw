@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="AppTitle"><value>HELIOS — 智能网络天文台</value></data>
+  <data name="NavTopology"><value>拓扑</value></data>
+  <data name="NavDevices"><value>设备</value></data>
+  <data name="NavTraffic"><value>流量</value></data>
+  <data name="NavAlerts"><value>告警中心</value></data>
+  <data name="NavIncidents"><value>事件</value></data>
+  <data name="NavDashboard"><value>仪表盘</value></data>
+  <data name="NavReports"><value>报告</value></data>
+  <data name="NavSettings"><value>设置</value></data>
+  <data name="SearchPlaceholder"><value>搜索设备、告警、事件...（Ctrl+K）</value></data>
+  <data name="InspectorTitle"><value>节点检查器</value></data>
+  <data name="TimelineTitle"><value>网络时间线</value></data>
+  <data name="FlowExplorerTitle"><value>流量浏览器</value></data>
+  <data name="ThemeSectionTitle"><value>外观</value></data>
+  <data name="ThemeWindowsDefault"><value>Windows 默认</value></data>
+  <data name="ThemeLight"><value>浅色</value></data>
+  <data name="ThemeDark"><value>深色</value></data>
+  <data name="ThemeAmoled"><value>AMOLED 纯黑</value></data>
+  <data name="ThemeRed"><value>红色</value></data>
+  <data name="ThemeBlue"><value>蓝色</value></data>
+  <data name="LanguageSectionTitle"><value>语言</value></data>
+  <data name="ScheduleSectionTitle"><value>监控计划（开放时间）</value></data>
+  <data name="ScheduleDescription"><value>设置 HELIOS 应主动监控此范围的时间段。在这些时段之外，监控将暂停，告警将被抑制。</value></data>
+  <data name="ScheduleAddWindow"><value>添加时间段</value></data>
+  <data name="ScheduleStatusActive"><value>当前处于活动状态</value></data>
+  <data name="ScheduleStatusInactive"><value>未激活</value></data>
+  <data name="ScheduleNextTransitionActive"><value>将在以下时间关闭</value></data>
+  <data name="ScheduleNextTransitionInactive"><value>将在以下时间开放</value></data>
+  <data name="DiscoveryStart"><value>开始发现</value></data>
+  <data name="DiscoveryCidrLabel"><value>子网 (CIDR)</value></data>
+  <data name="DiscoveryInterfaceLabel"><value>网络接口</value></data>
+  <data name="HealthHealthy"><value>健康</value></data>
+  <data name="HealthWarning"><value>警告</value></data>
+  <data name="HealthDegraded"><value>降级</value></data>
+  <data name="HealthCritical"><value>严重</value></data>
+  <data name="HealthUnknown"><value>未知</value></data>
+</root>

@@ -1,0 +1,102 @@
+<Window
+    x:Class="Helios.UI.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Helios.UI.Controls">
+
+    <Grid x:Name="RootGrid" Background="{ThemeResource HeliosCanvasBackgroundBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Top command bar: search / command palette / discovery controls -->
+        <CommandBar Grid.Row="0" DefaultLabelPosition="Right" Background="{ThemeResource HeliosPanelBackgroundBrush}">
+            <CommandBar.Content>
+                <StackPanel Orientation="Horizontal" Spacing="8" Padding="12,6">
+                    <TextBlock x:Name="AppTitleText" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" />
+                    <AutoSuggestBox x:Name="GlobalSearchBox" Width="360" PlaceholderText="Search devices, alerts, events... (Ctrl+K)" />
+                    <TextBox x:Name="CidrInputBox" Width="180" PlaceholderText="192.168.1.0/24" />
+                    <Button x:Name="StartDiscoveryButton" Content="Start Discovery" Click="StartDiscoveryButton_Click" />
+                    <Button x:Name="RunLayoutButton" Content="Auto Layout" Click="RunLayoutButton_Click" />
+                </StackPanel>
+            </CommandBar.Content>
+            <AppBarButton Icon="Setting" Label="Settings" Click="SettingsButton_Click" />
+        </CommandBar>
+
+        <!-- Main 3-pane layout: Device Explorer | Topology Canvas | Inspector -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="320" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Left: Device / Node Explorer -->
+            <Border Grid.Column="0" Background="{ThemeResource HeliosPanelBackgroundBrush}" BorderBrush="{ThemeResource HeliosBorderBrush}" BorderThickness="0,0,1,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Devices" Margin="12,10" FontWeight="SemiBold" />
+                    <ListView x:Name="DeviceListView" Grid.Row="1" SelectionChanged="DeviceListView_SelectionChanged">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Spacing="8" Padding="4">
+                                    <Ellipse Width="10" Height="10" Fill="{Binding HealthBrush}" />
+                                    <TextBlock Text="{Binding DisplayName}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </Border>
+
+            <!-- Center: Interactive Topology Canvas -->
+            <Grid Grid.Column="1">
+                <controls:TopologyCanvasControl x:Name="TopologyCanvas" />
+            </Grid>
+
+            <!-- Right: Node Inspector / Health -->
+            <Border Grid.Column="2" Background="{ThemeResource HeliosPanelBackgroundBrush}" BorderBrush="{ThemeResource HeliosBorderBrush}" BorderThickness="1,0,0,0">
+                <ScrollViewer Padding="14">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Node Inspector" FontWeight="SemiBold" FontSize="15" />
+                        <TextBlock x:Name="InspectorName" FontSize="18" FontWeight="Bold" />
+                        <TextBlock x:Name="InspectorIp" Foreground="{ThemeResource HeliosTextSecondaryBrush}" />
+                        <TextBlock x:Name="InspectorMac" Foreground="{ThemeResource HeliosTextSecondaryBrush}" />
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <Ellipse x:Name="InspectorHealthDot" Width="12" Height="12" />
+                            <TextBlock x:Name="InspectorHealthText" />
+                        </StackPanel>
+                        <TextBlock x:Name="InspectorHealthReason" TextWrapping="Wrap" Foreground="{ThemeResource HeliosTextSecondaryBrush}" />
+                        <TextBlock x:Name="InspectorLatency" />
+                        <TextBlock x:Name="InspectorLoss" />
+                        <TextBlock Text="Services" FontWeight="SemiBold" Margin="0,10,0,0" />
+                        <ItemsControl x:Name="InspectorServicesList" />
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+
+        <!-- Bottom: Timeline / Flow Explorer / Alert Center tabs -->
+        <Border Grid.Row="2" Height="220" Background="{ThemeResource HeliosPanelBackgroundBrush}" BorderBrush="{ThemeResource HeliosBorderBrush}" BorderThickness="0,1,0,0">
+            <Pivot x:Name="BottomPivot">
+                <PivotItem Header="Timeline">
+                    <ListView x:Name="TimelineListView" />
+                </PivotItem>
+                <PivotItem Header="Flow Explorer">
+                    <ListView x:Name="FlowExplorerListView" />
+                </PivotItem>
+                <PivotItem Header="Alert Center">
+                    <ListView x:Name="AlertCenterListView" />
+                </PivotItem>
+                <PivotItem Header="Console">
+                    <TextBlock x:Name="ConsoleText" Margin="12" FontFamily="Cascadia Mono" />
+                </PivotItem>
+            </Pivot>
+        </Border>
+    </Grid>
+</Window>

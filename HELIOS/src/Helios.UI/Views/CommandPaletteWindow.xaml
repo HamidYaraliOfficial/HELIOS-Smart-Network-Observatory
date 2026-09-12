@@ -1,0 +1,11 @@
+<Window
+    x:Class="Helios.UI.Views.CommandPaletteWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="{ThemeResource HeliosPanelBackgroundBrush}" Padding="16">
+        <StackPanel Spacing="8" MaxWidth="560">
+            <TextBox x:Name="QueryBox" PlaceholderText="Type a device, alert, rule, view or action..." TextChanged="QueryBox_TextChanged" />
+            <ListView x:Name="ResultsList" Height="360" DoubleTapped="ResultsList_DoubleTapped" />
+        </StackPanel>
+    </Grid>
+</Window>

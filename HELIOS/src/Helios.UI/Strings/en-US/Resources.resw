@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="AppTitle"><value>HELIOS — Smart Network Observatory</value></data>
+  <data name="NavTopology"><value>Topology</value></data>
+  <data name="NavDevices"><value>Devices</value></data>
+  <data name="NavTraffic"><value>Traffic</value></data>
+  <data name="NavAlerts"><value>Alert Center</value></data>
+  <data name="NavIncidents"><value>Incidents</value></data>
+  <data name="NavDashboard"><value>Dashboard</value></data>
+  <data name="NavReports"><value>Reports</value></data>
+  <data name="NavSettings"><value>Settings</value></data>
+  <data name="SearchPlaceholder"><value>Search devices, alerts, events... (Ctrl+K)</value></data>
+  <data name="InspectorTitle"><value>Node Inspector</value></data>
+  <data name="TimelineTitle"><value>Network Timeline</value></data>
+  <data name="FlowExplorerTitle"><value>Flow Explorer</value></data>
+  <data name="ThemeSectionTitle"><value>Appearance</value></data>
+  <data name="ThemeWindowsDefault"><value>Windows Default</value></data>
+  <data name="ThemeLight"><value>Light</value></data>
+  <data name="ThemeDark"><value>Dark</value></data>
+  <data name="ThemeAmoled"><value>AMOLED Black</value></data>
+  <data name="ThemeRed"><value>Red</value></data>
+  <data name="ThemeBlue"><value>Blue</value></data>
+  <data name="LanguageSectionTitle"><value>Language</value></data>
+  <data name="ScheduleSectionTitle"><value>Monitoring Schedule (Open Hours)</value></data>
+  <data name="ScheduleDescription"><value>Define the hours HELIOS should actively monitor this scope. Outside these hours, monitoring is paused and alerts are suppressed.</value></data>
+  <data name="ScheduleAddWindow"><value>Add Time Window</value></data>
+  <data name="ScheduleStatusActive"><value>Active now</value></data>
+  <data name="ScheduleStatusInactive"><value>Inactive</value></data>
+  <data name="ScheduleNextTransitionActive"><value>Closes in</value></data>
+  <data name="ScheduleNextTransitionInactive"><value>Opens in</value></data>
+  <data name="DiscoveryStart"><value>Start Discovery</value></data>
+  <data name="DiscoveryCidrLabel"><value>Subnet (CIDR)</value></data>
+  <data name="DiscoveryInterfaceLabel"><value>Interface</value></data>
+  <data name="HealthHealthy"><value>Healthy</value></data>
+  <data name="HealthWarning"><value>Warning</value></data>
+  <data name="HealthDegraded"><value>Degraded</value></data>
+  <data name="HealthCritical"><value>Critical</value></data>
+  <data name="HealthUnknown"><value>Unknown</value></data>
+</root>

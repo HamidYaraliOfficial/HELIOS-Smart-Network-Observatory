@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="AppTitle"><value>هلیوس — رصدخانه هوشمند شبکه</value></data>
+  <data name="NavTopology"><value>توپولوژی</value></data>
+  <data name="NavDevices"><value>دستگاه‌ها</value></data>
+  <data name="NavTraffic"><value>ترافیک</value></data>
+  <data name="NavAlerts"><value>مرکز هشدارها</value></data>
+  <data name="NavIncidents"><value>حوادث</value></data>
+  <data name="NavDashboard"><value>داشبورد</value></data>
+  <data name="NavReports"><value>گزارش‌ها</value></data>
+  <data name="NavSettings"><value>تنظیمات</value></data>
+  <data name="SearchPlaceholder"><value>جستجوی دستگاه، هشدار، رویداد... (Ctrl+K)</value></data>
+  <data name="InspectorTitle"><value>بازرس گره</value></data>
+  <data name="TimelineTitle"><value>خط زمانی شبکه</value></data>
+  <data name="FlowExplorerTitle"><value>کاوشگر جریان</value></data>
+  <data name="ThemeSectionTitle"><value>ظاهر برنامه</value></data>
+  <data name="ThemeWindowsDefault"><value>پیش‌فرض ویندوز</value></data>
+  <data name="ThemeLight"><value>روشن</value></data>
+  <data name="ThemeDark"><value>تاریک</value></data>
+  <data name="ThemeAmoled"><value>مشکی AMOLED</value></data>
+  <data name="ThemeRed"><value>قرمز</value></data>
+  <data name="ThemeBlue"><value>آبی</value></data>
+  <data name="LanguageSectionTitle"><value>زبان</value></data>
+  <data name="ScheduleSectionTitle"><value>برنامه زمانی مانیتورینگ (ساعات فعال)</value></data>
+  <data name="ScheduleDescription"><value>ساعاتی که هلیوس باید این محدوده را به‌صورت فعال مانیتور کند مشخص کنید. خارج از این ساعات، مانیتورینگ متوقف و هشدارها سرکوب می‌شوند.</value></data>
+  <data name="ScheduleAddWindow"><value>افزودن بازه زمانی</value></data>
+  <data name="ScheduleStatusActive"><value>هم‌اکنون فعال</value></data>
+  <data name="ScheduleStatusInactive"><value>غیرفعال</value></data>
+  <data name="ScheduleNextTransitionActive"><value>بسته می‌شود تا</value></data>
+  <data name="ScheduleNextTransitionInactive"><value>باز می‌شود تا</value></data>
+  <data name="DiscoveryStart"><value>شروع کشف شبکه</value></data>
+  <data name="DiscoveryCidrLabel"><value>ساب‌نت (CIDR)</value></data>
+  <data name="DiscoveryInterfaceLabel"><value>اینترفیس</value></data>
+  <data name="HealthHealthy"><value>سالم</value></data>
+  <data name="HealthWarning"><value>هشدار</value></data>
+  <data name="HealthDegraded"><value>افت کیفیت</value></data>
+  <data name="HealthCritical"><value>بحرانی</value></data>
+  <data name="HealthUnknown"><value>نامشخص</value></data>
+</root>
